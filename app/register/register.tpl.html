@@ -1,0 +1,44 @@
+<h1>Register</h1>
+<form class="form-horizontal" ng-controller="registerCtrl">
+<div class="form-group">
+<label class="control-label col-xs-2">First Name</label>
+    <div class="col-xs-4">
+    <input type="text" placeholder="First Name" class="form-control" ng-model="user.firstName">
+    </div>    
+</div>
+    <div class="form-group">
+<label class="control-label col-xs-2">Last Name</label>
+    <div class="col-xs-4">
+    <input type="text" placeholder="Last Name" class="form-control" ng-model="user.lastName">
+    </div>    
+</div>
+    <div class="form-group">
+<label class="control-label col-xs-2">Gender</label>
+    <div class="col-xs-4">
+    <input type="radio" name="gender" ng-model="user.gender" value="Male"> Male
+        <input type="radio" name="gender" ng-model="user.gender" value="Female"> FeMale
+        <input type="radio" name="gender" ng-model="user.gender" value="others"> Others
+    </div>    
+</div>
+    <div class="form-group">
+<label class="control-label col-xs-2">Country</label>
+    <div class="col-xs-4">
+        <select class="form-control">
+        <option>Please Select</option>
+        </select>
+    </div>    
+</div>
+    <div class="form-group">
+<label class="control-label col-xs-2">States</label>
+    <div class="col-xs-4">
+        <select class="form-control">
+        <option>Please Select</option>
+        </select>
+    </div>    
+</div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-4">
+            <button class="btn btn-danger" ng-click="registerUser()">Register</button>
+        </div>
+    </div>
+</form>
