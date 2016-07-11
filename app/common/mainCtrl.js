@@ -1,6 +1,6 @@
 angular .module("fashionBay")
 .controller("mainCtrl",["$scope", function ($scope){
-    $scope.appName="FASHION BAY"
+    $scope.appName="MY BAY"
     $scope.mainHeader = "app/common/header.tpl.html";
     $scope.templateURL = "app/home/home.tpl.html";
     
@@ -9,6 +9,8 @@ angular .module("fashionBay")
             $scope.templateURL = "app/register/register.tpl.html";
         }else if(pageType == "login"){
             $scope.templateURL = "app/login/login.tpl.html";
+        }else if(pageType == "home"){
+            $scope.templateURL = "app/home/home.tpl.html";
         }
     }
     
